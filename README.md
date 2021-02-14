@@ -6,9 +6,9 @@ A Flutter Widget that is scrollable with a sticky footer either stick to the bot
 
 ## Background
 
-This package using SingleScrollView and CustomMultiChildLayout to acheive a scrollable widget with a sticky footer. This allow a synamic height of child widgets in scroll body. 
+This package using SingleScrollView and CustomMultiChildLayout to acheive a scrollable widget with a sticky footer. This allow a dynamic height of child widgets in scroll body. 
 
-At the same time, because of the child widgets are actually in a Column widget of the SingleScrollView, this is not recommended to use with lots of child widgets. You may simiply test with the example to see whether it is fit for your case. 
+At the same time, because of the SingleScrollView with Column approach, this is not recommended to use with lots of child widgets for performance reason. You may simiply test with the example to see whether it is fit for your case. 
 
 ## Usage
 
