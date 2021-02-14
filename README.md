@@ -30,8 +30,11 @@ StickyFooterScrollView({
 
 ## Example
 
+when scrollbody is shorter than the avialble widget height
 ![](demo1.png)
-![](demo2.png)
+
+when scrollbody is longer than the avialble widget height
+![](demo3.gif)
 
 ```
 @override
