@@ -1,4 +1,6 @@
 # sticky_footer_scrollview
+[![pub package](https://img.shields.io/pub/v/sticky_footer_scrollview.svg)](https://pub.dev/packages/sticky_footer_scrollview)
+
 
 A Flutter Widget that is scrollable with a sticky footer either stick to the bottom of screen of the end of the scroll body.
 
