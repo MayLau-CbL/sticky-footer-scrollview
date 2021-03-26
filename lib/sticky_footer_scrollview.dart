@@ -15,13 +15,13 @@ class StickyFooterScrollView extends StatefulWidget {
   final Widget footer;
 
   ///scroll control of this scrollview
-  final ScrollController scrollController;
+  final ScrollController? scrollController;
 
   StickyFooterScrollView({
-    Key key,
-    this.footer,
-    @required this.itemBuilder,
-    @required this.itemCount,
+    Key? key,
+    required this.footer,
+    required this.itemBuilder,
+    required this.itemCount,
     this.scrollController,
   })  : assert(itemCount >= 0, 'itemCount must >=0'),
         super(key: key);
@@ -32,10 +32,10 @@ class StickyFooterScrollView extends StatefulWidget {
 
 class _StickyFooterScrollViewState extends State<StickyFooterScrollView> {
   ///scroll body width
-  double _width;
+  double? _width;
 
   ///scroll body height
-  double _height;
+  double? _height;
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraint) {
@@ -52,7 +52,7 @@ class _StickyFooterScrollViewState extends State<StickyFooterScrollView> {
                   _width = width;
                   _height = height;
                   //setState when this frame finished
-                  SchedulerBinding.instance.addPostFrameCallback((_) {
+                  SchedulerBinding.instance?.addPostFrameCallback((_) {
                     setState(() {});
                   });
                 }
