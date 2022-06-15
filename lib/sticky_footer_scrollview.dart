@@ -52,7 +52,7 @@ class _StickyFooterScrollViewState extends State<StickyFooterScrollView> {
                   _width = width;
                   _height = height;
                   //setState when this frame finished
-                  SchedulerBinding.instance?.addPostFrameCallback((_) {
+                  SchedulerBinding.instance.addPostFrameCallback((_) {
                     setState(() {});
                   });
                 }

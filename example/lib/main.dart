@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
       child: Scaffold(
         body: StickyFooterScrollView(
-          itemCount: 50,
+          itemCount: 5,
           itemBuilder: (context, index) {
             return Card(
               child: ListTile(
