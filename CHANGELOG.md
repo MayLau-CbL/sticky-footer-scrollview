@@ -1,6 +1,7 @@
 ## [1.1.1]
 
 * Fix: SchedulerBinding.instance null check
+* Update: example android project for 2.10.5 flutter version
 
 ## [1.1.0]
 
